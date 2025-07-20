@@ -35,7 +35,7 @@ resource "kubernetes_manifest" "management_ingress_route" {
           ]
         },
         {
-          match = "HostSNI(`iac.hl.rhysj6.com`)"
+          match = "HostSNI(`secrets.hl.rhysj6.com`)"
           services = [
             {
               name = "management-cluster-ingress"
