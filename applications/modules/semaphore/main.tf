@@ -111,7 +111,7 @@ resource "kubernetes_deployment" "semaphore" {
         service_account_name = kubernetes_service_account.semaphore.metadata[0].name
         container {
           name  = "semaphore"
-          image = "semaphoreui/semaphore:v2.15.0"
+          image = "semaphoreui/semaphore:v2.16.29"
           env {
             name  = "SEMAPHORE_DB_DIALECT"
             value = "postgres"
