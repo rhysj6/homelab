@@ -3,7 +3,7 @@ terraform {
   required_providers {
     rancher2 = {
       source  = "rancher/rancher2"
-      version = "8.1.0"
+      version = "8.3.1"
     }
     minio = {
       source  = "aminueza/minio"
