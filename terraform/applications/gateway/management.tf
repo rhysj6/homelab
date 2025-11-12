@@ -35,15 +35,6 @@ resource "kubernetes_manifest" "management_ingress_route" {
           ]
         },
         {
-          match = "HostSNI(`secrets.hl.rhysj6.com`)"
-          services = [
-            {
-              name = "management-cluster-ingress"
-              port = "https"
-            }
-          ]
-        },
-        {
           match = "HostSNI(`jenkins.hl.rhysj6.com`)"
           services = [
             {
